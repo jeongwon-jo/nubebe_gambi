@@ -1,0 +1,30 @@
+<div class="footer__wrapper">
+   <div class="footer__top">
+      <!-- <div class="footer__logo">
+         <img src="../_image/logo_white.svg" alt="로고">
+      </div> -->
+      <select id="select" class="custom-select" onchange="select_familysite(this)">
+         <option value="none">패밀리사이트</option>
+         <option value="http://www.nubebeherb.com">누베베 원외탕전실</option>
+         <option value="http://nubebe.com/">누베베 한의원</option>
+      </select>
+   </div>
+   <div class="footer__cmpny-info">
+      해당 페이지는 환자 복약 안내용으로 제작되었습니다.<br>
+      대표자명 : 임영우 &nbsp;I&nbsp; 정보관리책임자 : 이지연 &nbsp;I&nbsp; 연락처: 010-9570-0036 <br>주소: 경기도 성남시 분당구 성남대로926번길10, 2층<br>
+      <p class="copyright">
+        ⓒ2023. NUBEBE. All rights reserved
+      </p>
+   </div>
+</div>
+
+<script>
+   function select_familysite(select) {
+      if (select.value != 'none') {
+         window.open(select.value);
+         select.value = 'none';
+      } else {
+         return;
+      }
+   }
+</script>

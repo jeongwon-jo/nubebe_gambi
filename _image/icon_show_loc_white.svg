@@ -1,0 +1,11 @@
+<svg id="그룹_34" data-name="그룹 34" xmlns="http://www.w3.org/2000/svg" width="48" height="46.5" viewBox="0 0 48 46.5">
+  <text id="지점위치" transform="translate(0 43.5)" fill="#fff" font-size="12" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="0">지점위치</tspan></text>
+  <g id="WKND-icon" transform="translate(9.5)">
+    <rect id="background" width="25" height="27" fill="none"/>
+    <g id="Dribbble-Light-Preview" transform="translate(3)">
+      <g id="icons" transform="translate(0)">
+        <path id="pin_fill_sharp_circle-_634_" data-name="pin_fill_sharp_circle-[#634]" d="M176.5,5251.446a2.7,2.7,0,1,1,2.714-2.7,2.707,2.707,0,0,1-2.714,2.7m0-12.446a9.475,9.475,0,0,0-9.5,9.45c0,5.22,9.5,17.55,9.5,17.55s9.5-12.33,9.5-17.55a9.475,9.475,0,0,0-9.5-9.45" transform="translate(-167 -5239)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

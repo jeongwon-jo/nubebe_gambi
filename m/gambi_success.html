@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>누베베 감비정D</title>
+  <link rel="icon" href="../_image/favicon.ico">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="누베베 감비정D" />
+  <meta property="og:description" content="35만명이 선택한 누베베 감비정D" />
+  <meta property="og:image" content="../_image/opengraph.png" />
+  <meta name="description" content="감비정, 누베베 감비정, 누베베, 감비정D, 누베베 한의원, 한국기록원 공식 최단 기간 최다 비만치료 한의원, 누적 처방 310만통 감비정D">
+  <meta name="keywords" content="누베베한의원, 다이어트 한의원, 한방 다이어트, 다이어트 한약, 감비정, 누베베감비정">
+  <meta name="naver-site-verification" content="9be061d9b405176ef85e840254988d851ccdd4ed" />
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- NiceSelect -->
+  <script src="/_js/nice-select/js/jquery.js"></script>
+  <script src="/_js/nice-select/js/jquery.nice-select.js"></script>
+  <link rel="stylesheet" href="/_js/nice-select/css/nice-select.css">
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="./_css/style.css">
+  <script src="./_js/common.js" defer></script>
+  <script type="text/javascript">
+    document.oncontextmenu = function () { return false; }
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header></header>
+    <nav id="mobile-nav"  class="mobile-nav"></nav>
+    <div class="f-container success mt50">
+      <div class="title-area">
+      <span>다이어트 결과 미리보기</span>
+      <h1>체중 감량 예측 프로그램</h1>
+      </div>
+      <section class="bg-blue sec1">
+        <div class="title">
+          <h1>"약만 잘 챙겨 먹었는데<br> 살이 이렇게나 빠졌어요!"</h1>
+        </div>
+        <div class="desc">
+          <h2><b><strong>총 19.8kg 감량</strong></b></h2>
+          <span>누베베한의원 잠실점 차미*님 감비정D 6개월 복용</span>
+          <div class="desc__img">
+            <img src="../_image/success1.png" alt="성공 그래프 이미지">
+          </div>
+        </div>
+      </section>
+      <section class="bg-blue sec2">
+        <div class="desc">
+          <h2><b><strong>총 22.5kg 감량</strong></b></h2>
+          <span>누베베한의원 잠실점 손수*님 감비정D 8개월 복용</span>
+          <div class="desc__img">
+            <img src="../_image/success2.png" alt="성공 그래프 이미지">
+          </div>
+        </div>
+      </section>
+      <div class="f-container">
+        <div id="how-loss" class="how-loss">
+          <h3 class="tit">나는 감비정D로 얼마나 감량될까?</h3>
+          <p>특허기술 제 10-1987620호<br> 초기 체중 및 체중 감량을 이용한 최종 체중 감량 예측 방법<br> 및 컴퓨터 판독 가능 저장 매체</p>
+          <ul class="how-loss__form">
+              <li>
+                <span class="how-loss__tit">성별</span>
+                <div class="radio-area">
+                    <div class="custom-radio">
+                      <label for="man">
+                          <input type="radio" id="man" name="radio-sex" value="m" checked><em></em> 남성
+                      </label>
+                      <label for="woman">
+                          <input type="radio" id="woman" name="radio-sex" value="w"><em></em> 여성
+                      </label>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <span class="how-loss__tit">연령</span>
+                <div class="input">
+                    <input type="number" id="age" name="age"><span>세</span>
+                </div>
+              </li>
+              <li>
+                <span class="how-loss__tit">신장</span>
+                <div class="input">
+                    <input type="number" id="tall" name="tall"><span>cm</span>
+                </div>
+              </li>
+              <li>
+                <span class="how-loss__tit">체중</span>
+                <div class="input">
+                    <input type="number" id="weight" name="weight"><span>kg</span>
+                </div>
+              </li>
+          </ul>
+          <div class="d-flex-cc">
+              <button type="button" class="btn btn-result">결과 확인하기</button>
+          </div>
+        </div>
+        <div id="how-loss__result" class="how-loss__result">
+          <h3 class="sub-tit">결과</h3>
+          <p class="main-result typeA">
+            현재 BMI(체질량지수)는 <span id="bmi" class="bmi"></span> 입니다.
+          </p>
+          <p class="main-result typeB">
+            현재 BMI(체질량지수)는 <span id="bmi" class="bmi"></span> 이며, 정상 체중은 <span id="kg" class="kg"></span> 입니다.
+          </p>
+          <div class="how-loss__bmi">
+              <span class="bmi-arrow"></span>
+              <img src="../_image/bmi-result.png" alt="bmi 지수 이미지">
+          </div>
+          <!-- 저체중 -->
+          <p class="main-result__smry sum1">체중 감량 시, 전문가의 지도에 따른 목표설정과 식습관 교정이 필요합니다.
+            <span class="sub">
+              저체중의 경우 밥보다 간식으로 끼니를 때우거나,<br> 식사를 자주 거르는 식습관으로 근육량이 부족해지기 쉽습니다. <br><br>
+              체중 감량 시 무리한 식사조절을 하는 경우 어지러움, 두통, 울렁거림 등이<br> 쉽게 나타날 수 있어, 전문가의 지도에 따라 진행할 것을 권장합니다.
+            </span>
+          </p>
+          <!-- 정상 -->
+          <p class="main-result__smry sum2">
+            체중 감량 시, 체지방 위주의 감량이 필요 합니다.<br>
+            <em>나와 신체 상태가 비슷한 분들은 누베베 감비정D 복용 후<br>
+              <b>3개월간 7.5~8.5% 감량</b>에 성공했습니다.</em>
+            <span class="sub">정상체중이지만 근육 부족, 체지방률이 높은 비만의 형태가 많습니다.<br>전문가의 도움으로 근육 손실을 최소화 하는 식습관 교정과<br> 체지방 위주의 감량이 병행 되어야
+              합니다.</span>
+          </p>
+          <!-- 과체중 -->
+          <p class="main-result__smry sum3">정상 체중을 감량 목표로 할 경우, <b><span id="down_weight" class="down_weight"></span> 감량</b>이 필요합니다.<br>
+            <strong>
+              나와 신체 상태가 비슷한 분들은 <span class="gang">누베베 감비정D 복용 후<br> 2~3개월간 약 <span id="f_weight" class="f_weight"></span> 감량에 성공</span>했습니다.
+            </strong>
+            <span class="sub">
+              과체중의 경우 누베베 감비정D 3개월 복용 시 정상체중이 될 수 있습니다.<br><br>
+              체중이 더 증가할 경우 비만으로 인한<br> 고혈압, 당뇨, 심혈관계 질환 등 발생 위험이 함께 증가합니다.<br>
+              더 이상의 체중 증가를 막고, 전문가와 함께 확실한 감량을 시작할 때 입니다!
+            </span>
+          </p>
+          <!-- 비만 -->
+          <p class="main-result__smry sum4">정상 체중을 감량 목표로 할 경우, <b><span id="down_weight" class="down_weight"></span> 감량</b>이 필요합니다.<br>
+            <strong>
+              나와 신체 상태가 비슷한 분들은 <span class="gang">누베베 감비정D 복용 후<br> 2~3개월간 약 <span id="f_weight" class="f_weight"></span> 감량에 성공</span>했습니다.
+            </strong>
+            <span class="sub">
+              비만의 경우 고혈압, 당뇨, 고지혈증, 지방간과 같은 합병증과<br> 체중의 부하가 커지면서 무릎 통증 및 퇴행성 관절염이 생길 수 있습니다.<br>
+              식욕조절이 어렵다면 전문가의 도움을 받아<br> 효과적인 체중 감량 하는 것을 권장합니다.
+            </span>
+          </p>
+          <!-- 고도비만 -->
+          <p class="main-result__smry sum5">정상 체중을 감량 목표로 할 경우, <b><span id="down_weight" class="down_weight"></span> 감량</b>이 필요합니다.<br>
+            <strong>
+              나와 신체 상태가 비슷한 분들은 <span class="gang">누베베 감비정D 복용 후<br> 2~3개월간 약 <span id="f_weight" class="f_weight"></span> 감량에 성공</span>했습니다.
+            </strong>
+            <span class="sub">
+              고도비만은 과도한 지방 축적으로 일반적인 다이어트 식단이나 운동을 할 경우 지방세포가 위협을 느끼고 뇌에 호르몬을 분비 시켜 식욕을 더 높입니다.
+              <br><br>
+              이로 인해 폭식 등 악순환이 반복 되기 때문에 일반적인 관리가 아닌,<br>
+              전문가의 도움으로 식욕 억제 및 식사량 조절에 대한 치료가 꼭! 필요합니다.
+            </span>
+          </p>
+
+          <div class="d-flex-cc ptb20">
+            <a href="./clinic.html" class="btn btn-result">처방 한의원 찾기</a>
+          </div>
+          <p class="sub-result sum1">
+            정상 체중이 반드시 감량 목표가 되는 것은 아니며.<br> 체중 감량 정도는 개인의 따라 차이가 있을 수 있습니다.<br>
+            정확한 감량 목표 설정을 위해서는 진료 및 상담이 필요합니다.
+          </p>
+          <p class="sub-result sum2">
+            정상 체중이 반드시 감량 목표가 되는 것은 아니며.<br> 체중 감량 정도는 개인의 따라 차이가 있을 수 있습니다.<br>
+            정확한 감량 목표 설정을 위해서는 진료 및 상담이 필요합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-top"></div>
+  </div>
+  <footer></footer>
+  <script>
+    function Mobile() { return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); }
+
+    $(function () {
+      if (!Mobile()) {
+        location.href = "../gambi_success.html"
+      }
+    })
+  </script>
+
+</body>
+
+</html>
